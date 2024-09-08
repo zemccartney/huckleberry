@@ -1,12 +1,87 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.ruler {
+    position: absolute;
+    top: 0;
+    height: 100svh;
+    width: 2px;
+    margin-right: auto;
+    background-color: red;
 }
 
 /* Add styles here! */
+
+p {
+    font-size: 1.25rem;
+    line-height: 30px;
+}
+
+.max-width-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 24px;
+    max-width: 800px;
+}
+
+header {
+    border-bottom: 8px solid hsl(0deg 0% 60%);
+}
+
+.intro-chunk {
+    max-width: 415px;
+}
+
+.title {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+strong {
+    color: hsl(160deg 100% 30%);
+}
+
+main {
+    background-color: hsl(0deg 0% 40%);
+}
+
+.card {
+    background-color: white;
+    padding: 24px;
+    padding-top: 8px;
+    border-bottom: 8px solid hsl(0deg 0% 60%);
+    max-width: 800px;
+
+    /* 
+      aligns content with heading, necessary because of this box's padding 
+      in doing so, pulls card flush with the window once it gets below max-width
+      offsetting max-width wrapper padding
+    */
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+.indented-heading {
+    background-color: hsl(45deg 100% 50%);
+    border-bottom: 8px solid hsl(45deg 100% 40%);
+    padding: 16px 32px;
+    margin-left: -32px;
+    width: fit-content;
+}
